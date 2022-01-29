@@ -10,41 +10,80 @@
 #                                                                              #
 # **************************************************************************** #
 
-#compilation
-NAME = libft.a
-CFLAGS = -Wall -Werror -Wextra
-ARFLAGS = rcs
+NAME := libft.a
 
-INC = ./libft/
+CFLAGS := -Wall -Werror -Wextra
+ARFLAGS := rcs
 
-SRC_DIR = ./src/
-SRC = \
-ft_atoi.c               ft_isdigit.c                        ft_memmove.c            ft_split.c              ft_strlcat.c            ft_strrchr.c\
-ft_bzero.c              ft_islower.c                        ft_memset.c             ft_strchr.c             ft_strlcpy.c            ft_strstr.c\
-ft_calloc.c             ft_isprint.c                        ft_putchar_fd.c         ft_strcmp.c             ft_strlen.c             ft_strtrim.c\
-ft_isalnum.c            ft_isspace.c                      	ft_memchr.c             ft_putendl_fd.c         ft_strdup.c             ft_strmapi.c            ft_substr.c\
-ft_isalpha.c            ft_isupper.c                        ft_memcmp.c             ft_putnbr_fd.c          ft_striteri.c           ft_strncmp.c            ft_tolower.c\
-ft_isascii.c            ft_itoa.c                           ft_memcpy.c             ft_putstr_fd.c          ft_strjoin.c            ft_strnstr.c            ft_toupper.c
-SRC += \
-ft_lstadd_back.c        ft_lstclear.c           ft_lstiter.c            ft_lstmap.c             ft_lstsize.c\
-ft_lstadd_front.c       ft_lstdelone.c          ft_lstlast.c            ft_lstnew.c
+INC := ./
 
-OBJ_DIR = ./obj/
-OBJ = ${SRC:.c=.o}
+SRC_DIR := ./src
+SRC := io/ft_putchar_fd.c \
+io/ft_putendl_fd.c \
+io/ft_putnbr_fd.c \
+io/ft_putstr_fd.c \
+lst/ft_lstadd_back.c \
+lst/ft_lstadd_front.c \
+lst/ft_lstclear.c \
+lst/ft_lstdelone.c \
+lst/ft_lstiter.c \
+lst/ft_lstlast.c \
+lst/ft_lstmap.c \
+lst/ft_lstnew.c \
+lst/ft_lstsize.c \
+mem/ft_bzero.c \
+mem/ft_calloc.c \
+mem/ft_memchr.c \
+mem/ft_memcmp.c \
+mem/ft_memcpy.c \
+mem/ft_memmove.c \
+mem/ft_memset.c \
+string/ft_atoi.c \
+string/ft_isalnum.c \
+string/ft_isalpha.c \
+string/ft_isascii.c \
+string/ft_isdigit.c \
+string/ft_islower.c \
+string/ft_isprint.c \
+string/ft_isspace.c \
+string/ft_isupper.c \
+string/ft_itoa.c \
+string/ft_split.c \
+string/ft_strchr.c \
+string/ft_strcmp.c \
+string/ft_strdup.c \
+string/ft_striteri.c \
+string/ft_strjoin.c \
+string/ft_strlcat.c \
+string/ft_strlcpy.c \
+string/ft_strlen.c \
+string/ft_strmapi.c \
+string/ft_strncmp.c \
+string/ft_strnstr.c \
+string/ft_strrchr.c \
+string/ft_strstr.c \
+string/ft_strtrim.c \
+string/ft_substr.c \
+string/ft_tolower.c \
+string/ft_toupper.c
 
-all : ${NAME}
+OBJ_DIR := ./obj
+OBJS := ${addprefix $(OBJ_DIR)/, ${SRC:.c=.o}}
 
-$(NAME) : ${OBJS}
-	ar ${ARFLAGS} $@ $^
+all : $(NAME)
 
-${OBJ_PATH}%.o : ${SRC_PATH}%.c
-	gcc ${CFLAGS} -o $@ -c $< -I${INC_PATH}
+$(NAME) : $(OBJS)
+	ar $(ARFLAGS) $@ $^
+
+$(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
+	mkdir -p $(@D)
+	gcc $(CFLAGS) -o $@ -c $< -I$(INC)
 
 clean :
-	rm -f ${OBJS} ${OBJS_BONUS}
+	${RM} $(OBJS)
 
 fclean : clean
-	rm -f ${NAME}
+	${RM} $(NAME)
 
 re : fclean all
 
