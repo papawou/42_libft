@@ -15,7 +15,7 @@ NAME := libft.a
 CFLAGS := -Wall -Werror -Wextra
 ARFLAGS := rcs
 
-INC := ./
+INC := ./libft
 
 SRC_DIR := ./src
 SRC := io/ft_putchar_fd.c \
@@ -68,7 +68,7 @@ string/ft_tolower.c \
 string/ft_toupper.c
 
 OBJ_DIR := ./obj
-OBJS := ${addprefix $(OBJ_DIR)/, ${SRC:.c=.o}}
+OBJS := ${addprefix $(OBJ_DIR)/, ${SRC:.c=.o}} #obj/.../.o
 
 all : $(NAME)
 
