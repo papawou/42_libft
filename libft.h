@@ -17,5 +17,6 @@
 #include "libft/lst.h"
 #include "libft/mem.h"
 #include "libft/string.h"
+#include "libft/math.h"
 
 #endif

@@ -65,7 +65,9 @@ string/ft_strstr.c \
 string/ft_strtrim.c \
 string/ft_substr.c \
 string/ft_tolower.c \
-string/ft_toupper.c
+string/ft_toupper.c \
+math/inter.c \
+math/matrix.c
 
 OBJ_DIR := ./obj
 OBJS := ${addprefix $(OBJ_DIR)/, ${SRC:.c=.o}} #obj/.../.o
