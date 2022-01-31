@@ -15,7 +15,7 @@ NAME := libft.a
 CFLAGS := -Wall -Werror -Wextra
 ARFLAGS := rcs
 
-INC := ./libft
+INC := ./inc/libft
 
 SRC_DIR := ./src
 SRC := io/ft_putchar_fd.c \
