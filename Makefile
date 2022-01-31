@@ -70,7 +70,7 @@ math/inter.c \
 math/matrix.c
 
 OBJ_DIR := ./obj
-OBJS := ${addprefix $(OBJ_DIR)/, ${SRC:.c=.o}} #obj/.../.o
+OBJS := ${addprefix $(OBJ_DIR)/, ${SRC:.c=.o}}
 
 all : $(NAME)
 
