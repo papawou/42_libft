@@ -15,7 +15,7 @@ NAME := libft.a
 CFLAGS := -Wall -Werror -Wextra
 ARFLAGS := rcs
 
-INC := ./inc/libft
+INC := ./inc
 
 SRC_DIR := ./src
 SRC := io/ft_putchar_fd.c \
@@ -66,8 +66,8 @@ string/ft_strtrim.c \
 string/ft_substr.c \
 string/ft_tolower.c \
 string/ft_toupper.c \
-math/inter.c \
-math/matrix.c
+math/utils.c	math/mat.c	math/quat.c	math/rot.c	math/vec.c
+
 
 OBJ_DIR := ./obj
 OBJS := ${addprefix $(OBJ_DIR)/, ${SRC:.c=.o}}

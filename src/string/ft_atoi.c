@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "string.h"
+#include "libft/string.h"
 
 int	ft_atoi(const char *str)
 {

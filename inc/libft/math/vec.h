@@ -1,5 +1,5 @@
-#ifndef FT_MATRIX_H
-#define FT_MATRIX_H
+#ifndef FT_MATH_VEC_H
+#define FT_MATH_VEC_H
 
 typedef struct s_vec2
 {
@@ -22,11 +22,6 @@ typedef struct s_vec4
 	float w;
 } t_vec4;
 
-typedef struct s_mat4
-{
-	float m[4][4];
-} t_mat4;
-
-t_vec4 ft_mult_vec_mat(t_vec4 v, const t_mat4 m);
+t_vec4 vec4_norm(t_vec4 v);
 
 #endif

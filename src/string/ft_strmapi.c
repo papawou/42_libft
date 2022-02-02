@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "string.h"
+#include "libft/string.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

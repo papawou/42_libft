@@ -1,7 +1,10 @@
 #ifndef FT_MATH_H
 #define FT_MATH_H
 
-#include "math/inter.h"
-#include "math/matrix.h"
+#include "libft/math/utils.h"
+#include "libft/math/mat.h"
+#include "libft/math/vec.h"
+#include "libft/math/rot.h"
+#include "libft/math/quat.h"
 
 #endif
