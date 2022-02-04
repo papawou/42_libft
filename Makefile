@@ -15,7 +15,7 @@ NAME := libft.a
 CFLAGS := -Wall -Werror -Wextra
 ARFLAGS := rcs
 
-INC := ./inc
+INC := -I./inc
 
 SRC_DIR := ./src
 SRC := io/ft_putchar_fd.c \
@@ -79,7 +79,7 @@ $(NAME) : $(OBJS)
 
 $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
 	mkdir -p $(@D)
-	gcc $(CFLAGS) -o $@ -c $< -I$(INC)
+	gcc $(CFLAGS) -o $@ -c $< $(INC)
 
 clean :
 	${RM} $(OBJS)
