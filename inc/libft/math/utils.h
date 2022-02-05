@@ -10,4 +10,7 @@ double ft_remap(double input_a, double input_b, double out_a, double out_b, doub
 float deg_to_rad(float deg);
 float rad_to_deg(float rad);
 
+double ft_fabs(double a);
+int ft_abs(int a);
+
 #endif
