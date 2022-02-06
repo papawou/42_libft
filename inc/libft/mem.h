@@ -18,4 +18,6 @@ void *ft_memmove(void *dst, const void *src, size_t len);
 /* ft_memset.c */
 void *ft_memset(void *b, int c, size_t len);
 
+void **ft_malloc_cont_2d(unsigned int nrows, unsigned int ncols, size_t size_type);
+
 #endif

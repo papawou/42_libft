@@ -38,6 +38,7 @@ mem/ft_memcmp.c \
 mem/ft_memcpy.c \
 mem/ft_memmove.c \
 mem/ft_memset.c \
+mem/ft_malloc_cont_2d.c \
 string/ft_atoi.c \
 string/ft_isalnum.c \
 string/ft_isalpha.c \
