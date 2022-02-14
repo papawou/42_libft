@@ -2,7 +2,7 @@
 
 double ft_lerp(double start, double end, double alpha)
 {
-	return (end - start) * alpha + start;
+	return (1 - alpha) * start + alpha * end;
 }
 
 double ft_invlerp(double start, double end, double value)
