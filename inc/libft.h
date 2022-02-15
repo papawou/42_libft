@@ -18,5 +18,6 @@
 #include "libft/mem.h"
 #include "libft/string.h"
 #include "libft/math.h"
+#include "libft/utils.h"
 
 #endif

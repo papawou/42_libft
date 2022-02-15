@@ -67,7 +67,8 @@ string/ft_strtrim.c \
 string/ft_substr.c \
 string/ft_tolower.c \
 string/ft_toupper.c \
-math/utils.c
+math/utils.c \
+utils/ft_swap.c
 
 
 OBJ_DIR := ./obj
