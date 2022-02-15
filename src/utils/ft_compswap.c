@@ -1,4 +1,4 @@
-int ft_swap(int *a, int *b)
+int ft_compswap(int *a, int *b)
 {
 	int tmp;
 
@@ -10,7 +10,7 @@ int ft_swap(int *a, int *b)
 	return 1;
 }
 
-int ft_fswap(float *a, float *b)
+int ft_fcompswap(float *a, float *b)
 {
 	float tmp;
 
@@ -22,7 +22,7 @@ int ft_fswap(float *a, float *b)
 	return 1;
 }
 
-int ft_dswap(double *a, double *b)
+int ft_dcompswap(double *a, double *b)
 {
 	double tmp;
 

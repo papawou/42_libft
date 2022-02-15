@@ -1,9 +1,9 @@
 #ifndef FT_UTILS_H
 #define FT_UTILS_H
 
-// ft_swap.c
-int ft_swap(int *a, int *b);
-int ft_fswap(float *a, float *b);
-int ft_dswap(double *a, double *b);
+// ft_compswap.c
+int ft_compswap(int *a, int *b);
+int ft_fcompswap(float *a, float *b);
+int ft_dcompswap(double *a, double *b);
 
 #endif

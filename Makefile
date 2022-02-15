@@ -68,7 +68,7 @@ string/ft_substr.c \
 string/ft_tolower.c \
 string/ft_toupper.c \
 math/utils.c \
-utils/ft_swap.c
+utils/ft_compswap.c
 
 
 OBJ_DIR := ./obj
