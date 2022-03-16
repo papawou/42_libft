@@ -33,3 +33,31 @@ int ft_dcompswap(double *a, double *b)
 	*b = tmp;
 	return 1;
 }
+
+int ft_comp(int a, int b)
+{
+	if (a < b)
+		return a;
+	return b;
+}
+
+float ft_fcomp(float a, float b)
+{
+	if (a < b)
+		return a;
+	return b;
+}
+
+int ft_mcomp(int a, int b)
+{
+	if (a < b)
+		return b;
+	return a;
+}
+
+float ft_fmcomp(float a, float b)
+{
+	if (a < b)
+		return b;
+	return a;
+}

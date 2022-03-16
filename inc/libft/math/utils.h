@@ -13,4 +13,14 @@ float rad_to_deg(float rad);
 double ft_fabs(double a);
 int ft_abs(int a);
 
+int ft_compswap(int *a, int *b);
+int ft_fcompswap(float *a, float *b);
+int ft_dcompswap(double *a, double *b);
+
+int ft_comp(int a, int b);
+float ft_fcomp(float a, float b);
+
+int ft_mcomp(int a, int b);
+float ft_fmcomp(float a, float b);
+
 #endif
