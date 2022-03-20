@@ -3,6 +3,8 @@
 
 #define PI 3.14159265358979323846
 
+double ft_clamp(double min, double max, double value);
+
 double ft_lerp(double start, double end, double alpha);
 double ft_invlerp(double start, double end, double value);
 double ft_remap(double input_a, double input_b, double out_a, double out_b, double value);
