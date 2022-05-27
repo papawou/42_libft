@@ -13,10 +13,10 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include "libft/io.h"
-#include "libft/lst.h"
-#include "libft/mem.h"
-#include "libft/string.h"
-#include "libft/math.h"
+#include "libft/ft_io.h"
+#include "libft/ft_lst.h"
+#include "libft/ft_mem.h"
+#include "libft/ft_string.h"
+#include "libft/ft_math.h"
 
 #endif

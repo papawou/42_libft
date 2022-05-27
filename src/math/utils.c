@@ -1,4 +1,4 @@
-#include "libft/math/utils.h"
+#include "libft/math/ft_utils.h"
 
 double ft_clamp(double min, double max, double value)
 {

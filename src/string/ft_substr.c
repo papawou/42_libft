@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft/string.h"
+#include "libft/ft_string.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

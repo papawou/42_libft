@@ -1,5 +1,5 @@
-#ifndef FT_MATH_UTILS_H
-#define FT_MATH_UTILS_H
+#ifndef FT_UTILS_H
+#define FT_UTILS_H
 
 #define PI 3.14159265358979323846
 

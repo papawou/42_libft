@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/lst.h"
+#include "libft/ft_lst.h"
 
 void	ft_lstadd_front(t_list **alst, t_list *new)
 {

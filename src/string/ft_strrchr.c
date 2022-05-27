@@ -12,7 +12,7 @@
 
 
 #include <stdlib.h>
-#include "libft/string.h"
+#include "libft/ft_string.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

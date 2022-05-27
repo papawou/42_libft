@@ -13,8 +13,8 @@
 #include <stdlib.h>
 #include <errno.h>
 
-#include "libft/mem.h"
-#include "libft/string.h"
+#include "libft/ft_mem.h"
+#include "libft/ft_string.h"
 
 char	*ft_strdup(const char *s1)
 {

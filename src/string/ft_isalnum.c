@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/string.h"
+#include "libft/ft_string.h"
 
 int	ft_isalnum(int c)
 {
