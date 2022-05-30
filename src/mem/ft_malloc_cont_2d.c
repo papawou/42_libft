@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "libft/ft_mem.h"
 
-void	**ft_free_malloc_cont_2d(void **ar)
+void	ft_free_malloc_cont_2d(void **ar)
 {
 	free(ar[0]);
 	free(ar);
@@ -23,7 +23,7 @@ void	**ft_malloc_cont_2d(unsigned int nrows, unsigned int ncols, size_t size_typ
 	return (ar);
 }
 
-void ft_free_malloc_2d(void **ar, unsigned int nrows)
+void	ft_free_malloc_2d(void **ar, unsigned int nrows)
 {
 	unsigned int i;
 
@@ -36,10 +36,10 @@ void ft_free_malloc_2d(void **ar, unsigned int nrows)
 	free(ar);
 }
 
-void **ft_malloc_2d(unsigned int nrows, unsigned int ncols, size_t size_type)
+void	**ft_malloc_2d(unsigned int nrows, unsigned int ncols, size_t size_type)
 {
-	unsigned int i;
-	void **ar;
+	unsigned int	i;
+	void					**ar;
 
 	ar = (void **)ft_malloc(sizeof(void *) * nrows);
 	i = 0;
@@ -48,6 +48,5 @@ void **ft_malloc_2d(unsigned int nrows, unsigned int ncols, size_t size_type)
 		ar[i] = (void *)ft_malloc(size_type * ncols);
 		++i;
 	}
-
 	return (ar);
 }
