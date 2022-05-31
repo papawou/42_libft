@@ -1,49 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_comp.c                                          :+:      :+:    :+:   */
+/*   utils_2.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmendes <kmendes@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/31 03:25:10 by kmendes           #+#    #+#             */
-/*   Updated: 2022/05/31 03:27:12 by kmendes          ###   ########.fr       */
+/*   Created: 2022/05/31 03:29:38 by kmendes           #+#    #+#             */
+/*   Updated: 2022/05/31 03:32:42 by kmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_compswap(int *a, int *b)
-{
-	int	tmp;
+#include "libft/math/ft_utils.h"
 
-	if (*a < *b)
-		return (0);
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
-	return (1);
+double	ft_remap(t_remap_p p, double value)
+{
+	return (ft_lerp(p.out_a, p.out_b, ft_invlerp(p.input_a, p.input_b, value)));
 }
 
-int	ft_dcompswap(double *a, double *b)
+float	deg_to_rad(float deg)
 {
-	double	tmp;
-
-	if (*a < *b)
-		return (0);
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
-	return (1);
+	return (deg * PI / 180.0);
 }
 
-int	ft_comp(int a, int b)
+float	rad_to_deg(float rad)
 {
-	if (a < b)
+	return (rad * 180.0 / PI);
+}
+
+int	ft_abs(int a)
+{
+	if (a < 0)
+		return (-a);
+	else
 		return (a);
-	return (b);
 }
 
-int	ft_mcomp(int a, int b)
+double	ft_fabs(double a)
 {
-	if (a < b)
-		return (b);
-	return (a);
+	if (a < 0.0)
+		return (-a);
+	else
+		return (a);
 }

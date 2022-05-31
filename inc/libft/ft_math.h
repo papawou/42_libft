@@ -1,5 +1,17 @@
-#ifndef FT_MATH_H
-#define FT_MATH_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_math.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kmendes <kmendes@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/31 03:22:54 by kmendes           #+#    #+#             */
+/*   Updated: 2022/05/31 03:22:57 by kmendes          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include "libft/math/ft_utils.h"
+#ifndef FT_MATH_H
+# define FT_MATH_H
+
+# include "libft/math/ft_utils.h"
 #endif

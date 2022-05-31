@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: kmendes <kmendes@student.42.fr>            +#+  +:+       +#+         #
+#    By: kmendes <kmendes@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/01 15:50:35 by kmendes           #+#    #+#              #
-#    Updated: 2021/11/01 15:50:36 by kmendes          ###   ########.fr        #
+#    Updated: 2022/05/31 03:32:53 by kmendes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,8 +68,8 @@ string/ft_strtrim.c \
 string/ft_substr.c \
 string/ft_tolower.c \
 string/ft_toupper.c \
-math/utils.c \
-math/ft_comp.c
+math/utils.c math/utils_2.c \
+math/ft_comp.c math/ft_fcomp.c
 
 
 OBJ_DIR := ./obj
