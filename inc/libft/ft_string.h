@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_string.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kmendes <kmendes@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: kmendes <kmendes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 03:23:37 by kmendes           #+#    #+#             */
-/*   Updated: 2022/05/31 03:24:43 by kmendes          ###   ########.fr       */
+/*   Updated: 2022/06/01 13:11:41 by kmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int			ft_strcmp(const char *s1, const char *s2);
 char		*ft_strdup(const char *s1);
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char		*ft_strjoin(char const *s1, char const *s2);
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
-size_t	ft_strlen(const char *s);
+size_t		ft_strlcat(char *dst, const char *src, size_t dstsize);
+size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t		ft_strlen(const char *s);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 char		*ft_strnstr(const char *haystack, const char *needle, size_t len);
