@@ -6,7 +6,7 @@
 #    By: kmendes <kmendes@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/01 15:50:35 by kmendes           #+#    #+#              #
-#    Updated: 2022/05/31 03:32:53 by kmendes          ###   ########.fr        #
+#    Updated: 2022/06/16 15:13:14 by kmendes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ lst/ft_lstlast.c \
 lst/ft_lstmap.c \
 lst/ft_lstnew.c \
 lst/ft_lstsize.c \
+lst/ft_lstremove.c \
 mem/ft_bzero.c \
 mem/ft_calloc.c \
 mem/ft_memchr.c \
@@ -81,7 +82,7 @@ $(NAME) : $(OBJS)
 	ar $(ARFLAGS) $@ $^
 
 $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
-	mkdir -p $(@D)
+	@mkdir -p $(@D)
 	gcc $(CFLAGS) -o $@ -c $< $(INC)
 
 clean :
