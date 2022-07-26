@@ -1,23 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_malloc.c                                        :+:      :+:    :+:   */
+/*   ft_lstremove.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmendes <kmendes@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/31 03:34:02 by kmendes           #+#    #+#             */
-/*   Updated: 2022/05/31 03:34:02 by kmendes          ###   ########.fr       */
+/*   Created: 2022/06/16 15:08:28 by kmendes           #+#    #+#             */
+/*   Updated: 2022/07/12 22:55:35 by kmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft/ft_lst.h"
 
-void	*ft_malloc(size_t s)
+void	ft_lstremove(t_list **lst, t_list *item, void (*del)(void *))
 {
-	void	*p;
+	t_list	*tmp_item;
 
-	p = (void *) malloc(s);
-	if (p == NULL)
-		exit(EXIT_FAILURE);
-	return (p);
+	if (lst == NULL || item == NULL)
+		return ;
+	if (*lst == item)
+	{
+		*lst = item->next;
+		ft_lstdelone(item, del);
+		return ;
+	}
+	tmp_item = *lst;
+	while (tmp_item)
+	{
+		if (tmp_item->next == item)
+		{
+			tmp_item->next = item->next;
+			ft_lstdelone(item, del);
+			return ;
+		}
+		tmp_item = tmp_item->next;
+	}
 }

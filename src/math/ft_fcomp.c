@@ -1,21 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_io.h                                            :+:      :+:    :+:   */
+/*   ft_fcomp.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmendes <kmendes@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/31 03:22:07 by kmendes           #+#    #+#             */
-/*   Updated: 2022/05/31 03:22:10 by kmendes          ###   ########.fr       */
+/*   Created: 2022/05/31 03:27:09 by kmendes           #+#    #+#             */
+/*   Updated: 2022/05/31 03:35:08 by kmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_IO_H
-# define FT_IO_H
+int	ft_fcompswap(float *a, float *b)
+{
+	float	tmp;
 
-void	ft_putchar_fd(char c, int fd);
-void	ft_putendl_fd(char *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
-void	ft_putstr_fd(char *s, int fd);
+	if (*a < *b)
+		return (0);
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+	return (1);
+}
 
-#endif
+float	ft_fcomp(float a, float b)
+{
+	if (a < b)
+		return (a);
+	return (b);
+}
+
+float	ft_fmcomp(float a, float b)
+{
+	if (a < b)
+		return (b);
+	return (a);
+}
