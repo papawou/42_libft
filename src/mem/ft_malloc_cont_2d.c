@@ -6,7 +6,7 @@
 /*   By: kmendes <kmendes@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 03:33:30 by kmendes           #+#    #+#             */
-/*   Updated: 2022/08/18 13:36:52 by kmendes          ###   ########.fr       */
+/*   Updated: 2022/08/29 13:12:56 by kmendes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 void	ft_free_malloc_cont_2d(void **ar)
 {
+	if (!ar)
+		return ;
 	free(ar[0]);
 	free(ar);
 }

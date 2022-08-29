@@ -6,7 +6,7 @@
 #    By: kmendes <kmendes@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/01 15:50:35 by kmendes           #+#    #+#              #
-#    Updated: 2022/06/16 15:13:14 by kmendes          ###   ########.fr        #
+#    Updated: 2022/08/29 13:11:20 by kmendes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,7 +69,6 @@ string/ft_strtrim.c \
 string/ft_substr.c \
 string/ft_tolower.c \
 string/ft_toupper.c \
-math/utils.c math/utils_2.c \
 math/ft_comp.c math/ft_fcomp.c
 
 
